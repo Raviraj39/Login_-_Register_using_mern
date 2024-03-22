@@ -6,7 +6,7 @@ import axios from 'axios';
 const Home = () => {
 	const [user ,setUser] = useState([]);
 	useEffect(()=>{
-		axios.get('http://localhost:3001/home')
+		axios.get('https://login-register-using-mern-hcgp.vercel.app/home')
 		.then(user => 
 		{
 			setUser(user.data)
