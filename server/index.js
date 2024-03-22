@@ -16,6 +16,11 @@ app.use(cors())
 
 mongoose.connect("mongodb+srv://ravirajrb39:Raviraj@123@cluster0.vrnncuk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
+
+app.get("/", (req, res) => {
+    res.json("Hello");
+})
+
 app.post('/sign-up',(req,res)=>{
 	EmpModel.create(req.body)
 	.then(employee=>res.json(employee))
