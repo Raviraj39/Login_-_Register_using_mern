@@ -6,15 +6,14 @@ const EmpModel = require('./models/Employee')
 const app = express();
 app.use(cors(
     {
-        origin: ["https://login-register-using-mern.vercel.app/"],
+        origin: ["https://login-register-using-mern.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
 ));
 app.use(express.json())
-app.use(cors())
 
-mongoose.connect("mongodb+srv://ravirajrb39:Ravi5050@cluster0.vrnncuk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect('mongodb+srv://ravirajrb39:Ravi5050@cluster0.vrnncuk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
 
 app.get("/", (req, res) => {
