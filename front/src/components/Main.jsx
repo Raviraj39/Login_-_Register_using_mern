@@ -7,7 +7,7 @@ const Main = () => {
 			<h2>Welcome</h2>
 
 		<button type="submit" className="btn btn-primary px-3 py-4 ">
-            <a href="/sign-Up" className='text-white'>  Sign Up For New User </a> 
+            <a href="/sign-up" className='text-white'>  Sign Up For New User </a> 
         </button>
 		</div>	
 	</div>
