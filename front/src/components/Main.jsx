@@ -1,6 +1,4 @@
 import React from 'react'
-import { BrowserRouter as  Link } from 'react-router-dom'
-
 
 const Main = () => {
   return (
@@ -9,8 +7,7 @@ const Main = () => {
 			<h2>Welcome</h2>
 
 		<button type="submit" className="btn btn-primary px-3 py-4 ">
-			<Link className=" text-white " to={'/sign-up'}>Sign Up For New User</Link>
-
+            <a href="/sign-up" className='text-white'>  Sign Up For New User </a> 
         </button>
 		</div>	
 	</div>
