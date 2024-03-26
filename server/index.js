@@ -4,6 +4,7 @@ const cors = require("cors")
 const EmpModel = require('./models/Employee')
 
 const app = express();
+app.use(cors());
 app.use(cors(
     {
         origin: ["https://login-register-using-mern.vercel.app"],
@@ -13,7 +14,7 @@ app.use(cors(
 ));
 app.use(express.json())
 
-mongoose.connect('mongodb://ravirajrb39:Ravi5050@cluster0.vrnncuk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://ravirajrb39:Ravi5050@cluster0.vrnncuk.mongodb.net/?retryWrites=true&w=majority')
 
 
 app.get("/", (req, res) => {
