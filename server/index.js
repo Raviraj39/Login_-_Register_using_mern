@@ -11,14 +11,13 @@ app.use(express.json())
 require('dotenv').config();
 
 const db = process.env.MONGO_URL;
-const connection = mongoose.connect(db);
-module.exports={connection}
+ mongoose.connect(db);
 
 
 
-app.get("/", (req, res) => {
-    res.json("Hello");
-})
+// app.get("/", (req, res) => {
+//     res.json("Hello");
+// })
 
 app.post('/sign-up',(req,res)=>{
 	EmpModel.create(req.body)
