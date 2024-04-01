@@ -15,8 +15,7 @@ const Signin = () => {
 		axios.post('https://login-register-using-mern-2.onrender.com/sign-in',{email,password})
 		.then(result => {console.log(result)
 			if(result.data === "Success"){
-				navigate('/home' )
-
+				navigate("/home" );
 			}
 		})
 		.catch(err => console.log(err))

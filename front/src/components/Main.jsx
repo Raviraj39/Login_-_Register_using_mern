@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Main = () => {
   return (
 	<div className='d-flex align-items-end justify-content-center w-100 h-100 flex-coloumn text-column text-center'>
