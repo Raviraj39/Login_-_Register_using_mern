@@ -2,19 +2,18 @@ const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
 const EmpModel = require('./models/Employee')
+const dotenv = require("dotenv");
 
 const app = express();
 app.use(cors());
-app.use(cors(
-    {
-        origin: ["https://login-register-using-mern.vercel.app"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-));
-app.use(express.json())
 
-mongoose.connect('mongodb+srv://ravirajrb39:Ravi5050@cluster0.vrnncuk.mongodb.net/?retryWrites=true&w=majority')
+app.use(express.json())
+require('dotenv').config();
+
+const db = process.env.MONGO_URL;
+const connection = mongoose.connect(db);
+module.exports={connection}
+
 
 
 app.get("/", (req, res) => {
