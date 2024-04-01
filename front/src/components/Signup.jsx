@@ -12,7 +12,7 @@ const Signup = () => {
 
 	const handleSubmit = (e)=>{
 		e.preventDefault();
-		axios.post('https://login-register-using-mern-hcgp.vercel.app/sign-up',{name,date,email,password})
+		axios.post('https://login-register-using-mern-2.onrender.com/sign-up',{name,date,email,password})
 		.then(result => {console.log(result)
 		navigate('/sign-in')
 		})

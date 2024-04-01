@@ -6,7 +6,7 @@ import axios from 'axios';
 const Home = () => {
 	const [user ,setUser] = useState([]);
 	useEffect(()=>{
-		axios.get('https://login-register-using-mern-hcgp.vercel.app/home')
+		axios.get('https://login-register-using-mern-2.onrender.com/home')
 		.then(user => 
 		{
 			setUser(user.data)
