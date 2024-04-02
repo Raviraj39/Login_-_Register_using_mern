@@ -8,8 +8,7 @@ const Nav = () => {
 	<div>
 		<nav className="navbar navbar-expand-lg text-white fixed-top">
           <div className="container ">
-            <Link className="navbar-brand text-white " to={'/home'}>Employes Data</Link>
-            
+            <a href="/home" className='text-white navbar-brand'>Employes Data</a>
           </div>
         </nav>
 	</div>
